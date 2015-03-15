@@ -1,5 +1,6 @@
 # jquery.ajax.progress
-Allows to bind event handlers to XHR2 upload/download **progress events**
+Allows to bind event handlers to XHR2 upload/download **progress events**.
+Based on nebirhos script (https://gist.github.com/nebirhos/3892018)
 
 These events are: `downloading` and `uploading`
 
@@ -19,7 +20,7 @@ $(jqXHR).on('downloading', function(proxyEvent, event){
 
 Example code for `uploading` event:
 ```javascript
-var jqXHR = $.post('www.somedomain.com/largefile.avi', {data:"real long data, o maybe a file upload"}, function(response){
+var jqXHR = $.post('www.somedomain.com', {data:"real long data, o maybe a file upload"}, function(response){
 	/* do anything on finish */
 });
 
